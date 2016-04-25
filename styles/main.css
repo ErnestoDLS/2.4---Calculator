@@ -1,13 +1,18 @@
 .calcRow {
   display:table;
-  background: gray;
-  margin: 0;
-  width: auto;
+  background: green;
+  width:
   height: 40px;
-
-
+}
+.form {
+  background-color: green;
+  display:inline-block;
 
 }
-.buttons {
-  background: green;
+.operator {
+  text-align: justify;
+}
+.buttons  {
+  display: block;
+  margin: 0;
 }
