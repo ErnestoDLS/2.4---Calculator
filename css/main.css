@@ -20,18 +20,14 @@
 .grid__col--4 {
   width: 100%; }
 
-.calcRow {
-  background: green;
-  height: 40px;
-  font-size: 1.2rem; }
-
 .form {
-  background-color: green; }
+  background-color: green;
+  width: 280px; }
 
 .operator {
   text-align: justify; }
 
-.buttons {
-  margin: 0; }
+button {
+  background: none; }
 
 /*# sourceMappingURL=main.css.map */
