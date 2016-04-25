@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box; }
+
+.grid__row {
+  font-size: 0; }
+
+[class^=grid__col] {
+  display: inline-block;
+  font-size: 1.2rem; }
+
+.grid__col--1 {
+  width: 25%; }
+
+.grid__col--2 {
+  width: 50%; }
+
+.grid__col--3 {
+  width: 75%; }
+
+.grid__col--4 {
+  width: 100%; }
+
+.calcRow {
+  background: green;
+  height: 40px;
+  font-size: 1.2rem; }
+
+.form {
+  background-color: green; }
+
+.operator {
+  text-align: justify; }
+
+.buttons {
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */

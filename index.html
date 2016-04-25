@@ -3,35 +3,73 @@
   <head>
     <meta charset="utf-8">
     <title>Calculator</title>
-    <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <form class="form" action="index.html" method="post" data-js="form">
-      <input type="text" class="calcDisplay" data-js="cal-output"/>
-      <div class="calcRow">
-        <input type="button" class="button">C</button vaule="C" data-js="clearDisplay()"/>
-        <input type="button" class="button">7</button vaule="7" data-js="num-Input"/>
-        <input type="button" class="button">8</button vaule="8" data-js="num-Input"/>
-        <input type="button" class="button">9</button vaule="9" data-js="num-Input"/>
-        <input type="button" class="operator">/<button vaule="/" data-js="set-Operation"/>
+      <div class="grid__row">
+        <div class="grid__col--1">
+          <button data-value="C" data-js="clearDisplay()" class="button">C</button>
+        </div>
+        <div class="grid__col--3">
+          <h2 type="text" class="calcDisplay" data-js="cal-output"></h2>
+        </div>
       </div>
-    <div clas="calcRow">
-      <input type="button" class="button">4</button value="4" data-js="num-Input"/>
-      <input type="button" class="button">5</button value="5" data-js="num-Input"/>
-      <input type="button" class="button">6</button value="6" data-js="num-Input"/>
-      <input type="button" class="operator">x</button value="*" data-js="set-Operation('multiply')"/>
+      <div class="grid__row">
+        <div class="grid__col--1">
+          <button class="button" data-value="7" data-js="num-Input"/>7</button>
+        </div>
+        <div class="grid__col--1">
+          <button class="button" data-value="8" data-js="num-Input"/>8</button>
+        </div>
+        <div class="grid__col--1">
+          <button class="button" data-value="9" data-js="num-Input"/>9</button>
+        </div>
+        <div class="grid__col--1">
+          <button class="operator" data-value="/" data-js="set-Operation">/</button>
+        </div>
+      </div>
+    <div clas="grid__row">
+      <div class="grid__col--1">
+        <button class="button" data-value="4" data-js="num-Input"/>4</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="button" data-value="5" data-js="num-Input"/>5</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="button" data-value="6" data-js="num-Input"/>6</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="operator" data-value="*" data-js="set-Operation('multiply')"/>x</button>
+      </div>
     </div>
-    <div class="calcRow">
-      <input type="button" class="button">1</button value="1" data-js="num-Input"/>
-      <input type="button" class="button">2</button value="2" data-js="num-Input"/>
-      <input type="button" class="button">3</button value="3" data-js="num-Iput"/>
-      <input type="button" class="operator">-</button value="-" data-js="set-Operation('subtract')"/>
+    <div class="grid__row">
+      <div class="grid__col--1">
+        <button class="button" data-value="1" data-js="num-Input"/>1</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="button" data-value="2" data-js="num-Input"/>2</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="button" data-value="3" data-js="num-Iput"/>3</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="operator" data-value="-" data-js="set-Operation('subtract')"/>-</button>
+      </div>
     </div>
-    <div class="calcRow">
-      <input type="button" class="button">0</button value="0" data-js="num-Input"/>
-      <input type="button" class="operator">.</button value="." data-js="insertDecimal('.')"/>
-      <input type="button" class="operator">=</button value="=" data-js="calculate()"/>
-      <input type="button" class="operator">+</button value="+" data-js="set-Operation('add')"/>
+    <div class="grid__row">
+      <div class="grid__col--1">
+        <button class="button" data-value="0" data-js="num-Input"/>0</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="operator" data-value="." data-js="insertDecimal('.')"/>.</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="operator" data-value="=" data-js="calculate()"/>=</button>
+      </div>
+      <div class="grid__col--1">
+        <button class="operator" data-value="+" data-js="set-Operation('add')"/>+</button>
+      </div>
     </div>
   </form>
   </body>
