@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <form class="form" action="index.html" method="post" data-js="form">
+      <input type="text" class="calcDisplay" data-js="cal-output"/>
+      <div class="calcRow">
+      <input type="button" class="button">C</button vaule="C" data-js="clearDisplay()"/>
+      <input type="button" class="button">7</button vaule="7" data-js="num-Input"/>
+      <input type="button" class="button">8</button vaule="8" data-js="num-Input"/>
+      <input type="button" class="button">9</button vaule="9" data-js="num-Input"/>
+      <input type="button" class="operator">/<button vaule="/" data-js="set-Operation"/>
+    </div>
+    <div clas="calcRow">
+      <input type="button" class="button">4</button value="4" data-js="num-Input"/>
+      <input type="button" class="button">5</button value="5" data-js="num-Input"/>
+      <input type="button" class="button">6</button value="6" data-js="num-Input"/>
+      <input type="button" class="operator">x</button value="*" data-js="set-Operation('multiply')"/>
+    </div>
+    <div class="calcRow">
+      <input type="button" class="button">1</button value="1" data-js="num-Input"/>
+      <input type="button" class="button">2</button value="2" data-js="num-Input"/>
+      <input type="button" class="button">3</button value="3" data-js="num-Iput"/>
+      <input type="button" class="operator">-</button value="-" data-js="set-Operation('subtract')"/>
+    </div>
+    <div class="calcRow">
+      <input type="button" class="button">0</button value="0" data-js="num-Input"/>
+      <input type="button" class="operator">.</button value="." data-js="insertDecimal('.')"/>
+      <input type="button" class="operator">=</button value="=" data-js="calculate()"/>
+      <input type="button" class="operator">+</button value="+" data-js="set-Operation('add')"/>
+    </div>
+  </form>
+  </body>
+  <script type="text/javascript" src="JS/main.js"></script>
+</html>

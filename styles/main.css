@@ -1,0 +1,13 @@
+.calcRow {
+  display:table;
+  background: gray;
+  margin: 0;
+  width: auto;
+  height: 40px;
+
+
+
+}
+.buttons {
+  background: green;
+}
