@@ -1,8 +1,21 @@
 * {
   box-sizing: border-box; }
 
+button {
+  background: none;
+  border-color: transparent;
+  margin: 0;
+  cursor: pointer;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: thin; }
+
 .grid__row {
-  font-size: 0; }
+  font-size: 0;
+  border-style: solid;
+  border-color: white;
+  border-width: thin; }
 
 [class^=grid__col] {
   display: inline-block;
@@ -21,13 +34,12 @@
   width: 100%; }
 
 .form {
-  background-color: green;
-  width: 280px; }
+  background: green;
+  display: inline-block;
+  width: 150px;
+  margin: 0; }
 
 .operator {
   text-align: justify; }
-
-button {
-  background: none; }
 
 /*# sourceMappingURL=main.css.map */
